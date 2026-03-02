@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Jinghui Jia 个人主页</title>
+    <style>
+        body { font-family: Arial; max-width: 900px; margin: 0 auto; padding: 30px; line-height: 1.6; }
+        h1, h2 { color: #2c3e50; }
+        .btn { padding: 8px 16px; background: #3498db; color: white; border: none; border-radius: 6px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<h1>贾敬惠 | Jinghui Jia</h1>
+<button class="btn" onclick="toggleLang()">切换语言 / Switch Language</button>
+<hr>
+
+<div id="cn">
+<h2>基本信息</h2>
+<ul>
+    <li>姓名：贾敬惠</li>
+    <li>学校/专业：华东政法大学 金融学（大二）</li>
+    <li>语言能力：英语四级、六级已通过</li>
+    <li>专业证书：ACCA 已通过 4 门</li>
+    <li>邮箱：heqiushi520@qq.com</li>
+</ul>
+
+<h2>个人简介</h2>
+<p>华东政法大学金融学专业大二学生，具备扎实的金融、会计基础，通过ACCA四门考试与英语四六级。擅长数据分析、金融基础建模，未来希望在金融分析、风控、合规金融方向发展。</p>
+
+<h2>核心技能</h2>
+<ul>
+    <li>金融与会计：ACCA 知识体系、财务分析、风险管理</li>
+    <li>数据分析：Python、Excel、统计分析</li>
+    <li>语言：中英双语流利</li>
+</ul>
+</div>
+
+<div id="en" style="display:none">
+<h2>Basic Information</h2>
+<ul>
+    <li>Name: Jinghui Jia</li>
+    <li>School: East China University of Political Science and Law | Finance (Sophomore)</li>
+    <li>Languages: CET-4, CET-6 passed</li>
+    <li>Certifications: ACCA (4 papers passed)</li>
+    <li>Email: heqiushi520@qq.com</li>
+</ul>
+
+<h2>Profile</h2>
+<p>I am a sophomore majoring in Finance at ECUPL. I have solid knowledge in finance and accounting, with 4 ACCA papers passed and CET-4/6 certificates. I am good at data analysis and financial modeling.</p>
+
+<h2>Skills</h2>
+<ul>
+    <li>Finance: ACCA, Financial Analysis, Risk Management</li>
+    <li>Data: Python, Excel, Statistical Analysis</li>
+    <li>Language: Fluent in Chinese & English</li>
+</ul>
+</div>
+
+<script>
+function toggleLang() {
+    let cn = document.getElementById('cn');
+    let en = document.getElementById('en');
+    if (cn.style.display === 'none') {
+        cn.style.display = 'block';
+        en.style.display = 'none';
+    } else {
+        cn.style.display = 'none';
+        en.style.display = 'block';
+    }
+}
+</script>
+
+</body>
+</html>
+
